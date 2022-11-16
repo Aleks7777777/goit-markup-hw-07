@@ -1,4 +1,17 @@
 @import './base/norm';
-@import './utils' / @import './base/base-style';
-
+@import './utils/variables';
+@import './base/base-style';
 @import './components/header';
+@import './components/logo';
+@import './components/header-nav';
+@import './components/header-contact';
+@import './components/hero';
+@import './components/features';
+@import './components/what-we-do';
+@import './components/our-company';
+@import './components/customers';
+@import './components/modal-window';
+@import './components/footer';
+@import './components/footer-form';
+@import './components/filter-button';
+@import './components/portfolio-grid';
