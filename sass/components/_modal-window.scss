@@ -33,32 +33,7 @@
 	transform: translate(-50%, -50%) scale(2);
 }
 
-.modal-button__close {
-	position: absolute;
 
-	right: 8px;
-	top: 8px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-
-	background-color: var(--colff--white);
-	border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.modal-button__close:hover::before,
-.modal-button__close:hover::after {
-	background-color: var(--col--blue);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-button__close:focus::before,
-.modal-button__close:focus::after {
-	background-color: var(--col--blue);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .is-hidden {
 	visibility: hidden;
@@ -66,34 +41,7 @@
 	pointer-events: none;
 }
 
-.modal-button__close::before,
-.modal-button__close::after {
-	position: absolute;
-	content: "";
 
-	width: 15px;
-	height: 2px;
-	left: 50%;
-	top: 50%;
-	transition: transform 0.4s ease-in-out;
-
-	background-color: #000000;
-}
-
-.modal-button__close::before {
-	transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.modal-button__close::after {
-	transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.modal-button__close:hover::after,
-.modal-button__close:hover::before,
-.modal-button__close:focus::after,
-.modal-button__close:focus::before {
-	transform: translate(-50%, -50%) rotate(0deg);
-}
 
 .from-title {
 	font-family: "Roboto", sans-serif;
@@ -149,17 +97,7 @@
 	border-radius: 4px;
 }
 
-.modal-checkbox__title {
-	font-family: "Roboto", sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.03em;
-	margin-bottom: 30px;
 
-	color: var(--col--lgrey);
-}
 
 .modal-send__button {
 	font-family: "Roboto", sans-serif;
@@ -216,43 +154,4 @@
 	border-color: var(--col--blue);
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-checkbox__linc {
-	font-family: "Roboto", sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.03em;
-	text-decoration-line: underline;
-
-	color: var(--col--blue);
-}
-
-.modai-checkbox__label {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	gap: 8px;
-	margin-left: 15px;
-
-	font-size: 14px;
-	line-height: 24px;
-	letter-spacing: 0.03em;
-
-	color: var(--col--lgrey);
-}
-
-.modal-checkbox__title {
-	position: absolute;
-	top: 3px;
-	left: 0px;
-	width: 16px;
-	height: 15px;
-	background-image: url(../images/check_off.svg);
-}
-
-.modal-checkbox:checked+.modal-checkbox__title {
-	background-image: url(../images/check_on.svg);
 }

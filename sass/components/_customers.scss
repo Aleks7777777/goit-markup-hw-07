@@ -1,29 +1,17 @@
-.customers-title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 42px;
-	text-align: center;
-	letter-spacing: 0.03em;
-}
-
 .customers-list {
 	display: flex;
 
 	gap: 30px;
 }
 
-.customers-list__link:hover,
-.customers-list__link:focus {
+&__link:hover,
+&__link:focus {
 	color: var(--col--blue);
 	border-color: var(--col--blue);
 }
 
-.customers-title {
-	margin-top: 0;
-	margin-bottom: 50px;
-}
 
-.customers-list__link {
+&__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
