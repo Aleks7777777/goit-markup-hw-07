@@ -1,55 +1,58 @@
-.modal-button__close {
-	position: absolute;
+.modal-button {
 
-	right: 8px;
-	top: 8px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
+	&__close {
+		position: absolute;
 
-	background-color: var(--colff--white);
-	border: 1px solid rgba(0, 0, 0, 0.1);
-}
+		right: 8px;
+		top: 8px;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
 
-.modal-button__close:hover::before,
-.modal-button__close:hover::after {
-	background-color: var(--col--blue);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+		background-color: var(--colff--white);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
 
-.modal-button__close:focus::before,
-.modal-button__close:focus::after {
-	background-color: var(--col--blue);
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+	&__close:hover::before,
+	&__close:hover::after {
+		background-color: var(--col--blue);
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
 
-.modal-button__close::before,
-.modal-button__close::after {
-	position: absolute;
-	content: "";
+	&__close:focus::before,
+	&__close:focus::after {
+		background-color: var(--col--blue);
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
 
-	width: 15px;
-	height: 2px;
-	left: 50%;
-	top: 50%;
-	transition: transform 0.4s ease-in-out;
+	&__close::before,
+	&__close::after {
+		position: absolute;
+		content: "";
 
-	background-color: #000000;
-}
+		width: 15px;
+		height: 2px;
+		left: 50%;
+		top: 50%;
+		transition: transform 0.4s ease-in-out;
 
-.modal-button__close::before {
-	transform: translate(-50%, -50%) rotate(-45deg);
-}
+		background-color: #000000;
+	}
 
-.modal-button__close::after {
-	transform: translate(-50%, -50%) rotate(45deg);
-}
+	&__close::before {
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
 
-.modal-button__close:hover::after,
-.modal-button__close:hover::before,
-.modal-button__close:focus::after,
-.modal-button__close:focus::before {
-	transform: translate(-50%, -50%) rotate(0deg);
+	&__close::after {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+
+	&__close:hover::after,
+	&__close:hover::before,
+	&__close:focus::after,
+	&__close:focus::before {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
 }

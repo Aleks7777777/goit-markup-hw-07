@@ -3,18 +3,6 @@
 	align-items: center;
 }
 
-.main-nav__list {
-	display: flex;
-	align-items: center;
-	gap: 50px;
-}
-
-.main-nav__item {
-	position: relative;
-	padding-top: 32px;
-	padding-bottom: 32px;
-}
-
 .main-nav {
 	&__link::after {
 		content: "";
@@ -28,6 +16,18 @@
 		bottom: -1%;
 
 		background-color: var(--col--blue);
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+	}
+
+	&__item {
+		position: relative;
+		padding-top: 32px;
+		padding-bottom: 32px;
 	}
 
 	&__link:focus::after,
