@@ -29,11 +29,12 @@
 
 .footer-address {
 	&__link {
+		display: block;
 		font-style: normal;
 		text-decoration: none;
 		font-size: 14px;
 		line-height: 1.7;
-
+		margin-bottom: 9px;
 		color: var(--colff--white);
 		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
@@ -44,27 +45,29 @@
 	}
 }
 
+
+
+
+
+
 .footer-contact {
 	&__link {
+		display: block;
 		text-decoration: none;
 		font-style: normal;
 		font-size: 14px;
 		line-height: 1.7;
 		font-weight: 400;
-
 		color: rgba(255, 255, 255, 0.6);
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
-	&__link:not(:last-child) {
-		margin: 9px 0;
+	&__link.post {
+		margin-bottom: 9px;
 	}
 
 	&__link:hover,
 	&__link:focus {
 		color: var(--col--blue);
-	}
-
-	&__link {
-		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
