@@ -3,7 +3,34 @@
 	align-items: center;
 }
 
+
+
 .main-nav {
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+	}
+
+
+	&__item {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.02em;
+	}
+
+
+
+	&__item {
+		position: relative;
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+
 	&__link::after {
 		content: "";
 		position: absolute;
@@ -16,18 +43,6 @@
 		bottom: -1%;
 
 		background-color: var(--col--blue);
-	}
-
-	&__list {
-		display: flex;
-		align-items: center;
-		gap: 50px;
-	}
-
-	&__item {
-		position: relative;
-		padding-top: 32px;
-		padding-bottom: 32px;
 	}
 
 	&__link:focus::after,
